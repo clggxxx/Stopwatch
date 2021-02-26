@@ -9,4 +9,4 @@ Double-click to zero
 
 **Record history is not supported at this time**
 
-![Effect](https://github.com/KeivnMM/Stopwatch/images/stopwatch.png)
+![Effect](https://raw.githubusercontent.com/KeivnMM/Stopwatch/main/images/stopwatch.png)
