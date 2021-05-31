@@ -5,6 +5,9 @@
 #include <QElapsedTimer>
 #include <QTimer>
 #include <QTime>
+#include <QMenu>
+#include <QMenuBar>
+#include <QAction>
 
 class Stopwatch : public QLCDNumber
 {
@@ -13,9 +16,19 @@ class Stopwatch : public QLCDNumber
 public:
     Stopwatch(QWidget *parent = nullptr);
     ~Stopwatch();
+    void record();
+    bool isRun(){return timer->isActive();}
+    void reset();
 private:
     long num=0;
+    long interval;
+    int count = 0;
+    bool isRecord = false;
     QTimer *timer;
+signals:
+    void counttime(int, QTime, QTime);
+    void intervaltime(QTime t);
+    void timerstatus(bool state);
 private slots:
     void showTime();
 protected:

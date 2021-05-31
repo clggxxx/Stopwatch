@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Stopwatch">
+        <file>images/logo.ico</file>
+        <file>images/save.ico</file>
+        <file>images/clear.ico</file>
+        <file>images/close.ico</file>
+        <file>images/record.ico</file>
+    </qresource>
+</RCC>
